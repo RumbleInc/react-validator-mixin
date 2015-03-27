@@ -1,0 +1,31 @@
+{
+  "name": "react-validator-mixin",
+  "version": "0.1.0",
+  "description": "Form binding and validation with Backbone Models",
+  "main": "src/validator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RumbleInc/react-validator-mixin.git"
+  },
+  "keywords": [
+    "react",
+    "react-component",
+    "backbone",
+    "form",
+    "validation",
+    "data-binding",
+    "models"
+  ],
+  "author": "Alexey Volkov <alexey@rumble.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RumbleInc/react-validator-mixin/issues"
+  },
+  "homepage": "https://github.com/RumbleInc/react-validator-mixin",
+  "dependencies": {
+    "lodash": "^3.6.0"
+  }
+}
