@@ -1,6 +1,6 @@
 {
   "name": "react-validator-mixin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Form binding and validation with Backbone Models",
   "main": "src/validator.js",
   "scripts": {

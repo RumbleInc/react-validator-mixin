@@ -269,7 +269,7 @@ module.exports = function factoryFormMixin(params, models) {
                 (that.state && that.state[stateName] ?
                 params['labelErrorClassName'] || (name + '-label-error') :
                 params['labelSuccessClassName'] || (name + '-label-success'));
-            return _.isFunction(that.className) ? that.className(className) : className;
+            return className ? (_.isFunction(that.className) ? that.className(className) : className) : '';
         };
 
         var funcClassNameInput = function (attribute, emptyByDefault) {
@@ -279,7 +279,7 @@ module.exports = function factoryFormMixin(params, models) {
                 (that.state && that.state[stateName] ?
                 params['inputErrorClassName'] || (name + '-input-error') :
                 params['inputSuccessClassName'] || (name + '-input-success'));
-            return _.isFunction(that.className) ? that.className(className) : className;
+            return className ? (_.isFunction(that.className) ? that.className(className) : className) : '';
         };
 
         return {
