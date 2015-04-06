@@ -142,6 +142,9 @@ var getParamsByAttribute = function (modelData, attribute, value) {
 
     var normalizedAttribute = getPath(listOfAttributes);
     var normalizedExistedAttribute = getPath(existedAttribute);
+    if (_.isUndefined(normalizedExistedAttribute)) {
+        normalizedExistedAttribute = normalizedAttribute;
+    }
 
     var dataForInsert;
     if (normalizedExistedAttribute === normalizedAttribute) {
