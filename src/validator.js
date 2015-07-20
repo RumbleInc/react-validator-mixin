@@ -224,7 +224,7 @@ module.exports = function factoryFormMixin(params, models) {
         var funcValidate = function (attrs) {
             var errors = that[viewModelProp].preValidate(attrs);
             var state = {};
-            var stateErrors = _.cloneDeep(that.state[name + '-errors']) || {};
+            var stateErrors = _.cloneDeep(_.isPlainObject(that.state) && that.state[name + '-errors']) || {};
             _.each(_.keys(attrs), function (attribute) {
                 var error = errors && errors[attribute];
                 state[name + '-error-' + attribute] = error;
